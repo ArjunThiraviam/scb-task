@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Robot Vaccum </title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Standard Charted Robot Vaccum</h1>
+    <div id="main-container">
+
+        <div class="left-section">
+            <div>
+                <div>
+                    <label for="x-pos">X Position</label>
+                    <select name="" id="x-pos">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="y-pos">Y Position</label>
+                    <select name="" id="y-pos">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="facing">Facing Direction</label>
+                    <select name="" id="facing">
+                        <option value="NORTH">NORTH</option>
+                        <option value="EAST">EAST</option>
+                        <option value="WEST">WEST</option>
+                        <option value="SOUTH">SOUTH</option>
+                    </select>
+                </div>
+                <!-- <input type="button" value="Submit"> -->
+                <button onclick="placeRobo()" id="submit-btn">Place Robot</button>
+                <div>
+                    <button onclick="test1()" class="test-btn">Test 1</button>
+                    <button onclick="test2()" class="test-btn">Test 2</button>
+                    <button onclick="test3()" class="test-btn">Test 3</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="tiles-container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div id="result-display">
+                <h6>Result</h6>
+                <span>Our Vaccum robo is currently in <span id="x-val"> </span> <span id="y-val"> </span> <span id="facing-val"> </span> </span>
+            </div>
+        </div>
+        <div class="right-section">
+
+            <div id="controls">
+                <button id="move">
+                    <img src="./assets/images/move.png" alt="">
+                    Move
+                </button>
+                <div id="control__direction">
+                    <button id="left">
+                        <img src="./assets/images/left.png" alt="">
+                        Left
+                    </button>
+                    <button id="right">
+                        <img src="./assets/images/right.png" alt="">
+                        Right
+                    </button>    
+                </div>
+                <button id="report-btn" onclick="report()">
+                    Report
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+    <footer>Made as a requirement for <img src="./assets/images/scb.png" class="scb-logo" alt=""> selection process with <img class="scb-like" src="./assets/images/like.png" alt=""> by Arjun </footer>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
