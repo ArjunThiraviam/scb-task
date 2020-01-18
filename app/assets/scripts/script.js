@@ -166,23 +166,41 @@ function report() {
 
 function test1() {
     place(0,0,"NORTH");
-    move();
-    report();
+    setTimeout(()=> {
+        move();
+    }, 1000);
+    setTimeout(()=> {  
+        report();
+    }, 2000);
 }
 
 function test2() {
     place(0,0,"NORTH");
-    left();
-    report();
+    setTimeout(()=> {
+        left();
+    }, 1000);
+    setTimeout(()=> {
+        report();
+    }, 2000);
 }
 
 function test3() {
     place(1,2,"EAST");
-    move();
-    move();
-    left();
-    move();
-    report();
+    setTimeout(()=> {
+        move();
+    }, 500);
+    setTimeout(()=> {
+        move();
+    }, 1000);
+    setTimeout(()=> {
+        left();
+    }, 1500);
+    setTimeout(()=> {
+        move();
+    }, 2000);
+    setTimeout(()=> {
+        report();
+    }, 2500);
 }
 
 
@@ -191,7 +209,7 @@ document.getElementById("submit-btn").addEventListener('click',function () {
 });
 
 document.getElementById("test-btn-1").addEventListener('click',function () {
-    test1();
+    test1(place,move);
 });
 
 document.getElementById("test-btn-2").addEventListener('click',function () {
@@ -205,3 +223,4 @@ document.getElementById("test-btn-3").addEventListener('click',function () {
 document.getElementById("report-btn").addEventListener('click',function () {
     report();
 });
+
