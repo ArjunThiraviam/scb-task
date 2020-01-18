@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Robot Vaccum </title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -43,12 +43,11 @@
                         <option value="SOUTH">SOUTH</option>
                     </select>
                 </div>
-                <!-- <input type="button" value="Submit"> -->
-                <button onclick="placeRobo()" id="submit-btn">Place Robot</button>
+                <button id="submit-btn">Place Robot</button>
                 <div>
-                    <button onclick="test1()" class="test-btn">Test 1</button>
-                    <button onclick="test2()" class="test-btn">Test 2</button>
-                    <button onclick="test3()" class="test-btn">Test 3</button>
+                    <button id="test-btn-1" class="test-btn">Test 1</button>
+                    <button id="test-btn-2" class="test-btn">Test 2</button>
+                    <button id="test-btn-3" class="test-btn">Test 3</button>
                 </div>
 
             </div>
@@ -112,15 +111,13 @@
                         Right
                     </button>    
                 </div>
-                <button id="report-btn" onclick="report()">
+                <button id="report-btn">
                     Report
                 </button>
-
             </div>
-
         </div>
     </div>
     <footer>Made as a requirement for <img src="./assets/images/scb.png" class="scb-logo" alt=""> selection process with <img class="scb-like" src="./assets/images/like.png" alt=""> by Arjun </footer>
-    <script src="./assets/scripts/script.js"></script>
+    <script src="./temp/scripts/app.js"></script>
 </body>
 </html>

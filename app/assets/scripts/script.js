@@ -29,6 +29,7 @@ function place(x, y, f) {
 }
 
 function move() {
+    if(values.x !== undefined &&  values.y !== undefined ) {
     if (values.x < 5 && values.x >= 0 && values.y < 5 && values.y >= 0) {
         if (values.f == "NORTH") {
             if (values.y < 4) {
@@ -59,6 +60,8 @@ function move() {
         selectedCol.classList.add("vaccum-cleaner", "cleaned");
         document.getElementById("result-display").style.display = "none";
 }
+}
+
 function left() {
     function setValue() {
         if (values.f == "NORTH") {
@@ -181,3 +184,24 @@ function test3() {
     move();
     report();
 }
+
+
+document.getElementById("submit-btn").addEventListener('click',function () {
+    placeRobo();
+});
+
+document.getElementById("test-btn-1").addEventListener('click',function () {
+    test1();
+});
+
+document.getElementById("test-btn-2").addEventListener('click',function () {
+    test2();
+});
+
+document.getElementById("test-btn-3").addEventListener('click',function () {
+    test3();
+});
+
+document.getElementById("report-btn").addEventListener('click',function () {
+    report();
+});
